@@ -51,3 +51,57 @@ for (let index = 1; index < Object.keys(repositories).length; index++) {
             .append($("<p>").addClass("text-center").attr("style", "margin-top: "+secondary_repo_size/2+"px;")  // Custom function that 
             .text(formatRepoName(repositories[index][0])))))
 }
+
+$(".primary-project").parent().hover(eventIn => {
+    console.log(eventIn.currentTarget);
+    anime({
+        targets: eventIn.currentTarget.childNodes[0],
+        width: primary_repo_size/1.25,
+        height: primary_repo_size/1.25,
+        marginBottom: primary_repo_size/5
+    })
+    anime({
+        targets: eventIn.currentTarget.childNodes[0].childNodes[0],
+        translateY: primary_repo_size/3
+    })
+}, eventOut => {
+    anime({
+        targets: eventOut.currentTarget.childNodes[0],
+        width: primary_repo_size,
+        height: primary_repo_size,
+        marginBottom: 0
+    })
+    anime({
+        targets: eventOut.currentTarget.childNodes[0].childNodes[0],
+        translateY: 0
+    })
+})
+
+$(".secondary-project").parent().hover(eventIn => {
+    console.log(eventIn.currentTarget);
+    anime({
+        targets: eventIn.currentTarget.childNodes[0],
+        width: secondary_repo_size/1.25,
+        height: secondary_repo_size/1.25,
+        marginBottom: secondary_repo_size/5,
+        marginRight: secondary_repo_size/10,
+        marginLeft: secondary_repo_size/10
+    })
+    anime({
+        targets: eventIn.currentTarget.childNodes[0].childNodes[0],
+        translateY: secondary_repo_size/3
+    })
+}, eventOut => {
+    anime({
+        targets: eventOut.currentTarget.childNodes[0],
+        width: secondary_repo_size,
+        height: secondary_repo_size,
+        marginBottom: 0,
+        marginRight: 0,
+        marginLeft:  0
+    })
+    anime({
+        targets: eventOut.currentTarget.childNodes[0].childNodes[0],
+        translateY: 0
+    })
+})
