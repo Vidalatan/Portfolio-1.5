@@ -1,7 +1,9 @@
 :root {
     --theme-dark: rgb(33, 37, 41); /* same color used from bootstrap */
-    --theme-light: darkgray;
-    --theme-accent: white;
+    --theme-light: rgb(189, 188, 188);
+    --theme-accent: rgb(255, 255, 255);
+    --theme-accent2: rgb(109, 109, 109);
+    --theme-opaque: rgba(109, 109, 109, 0.25);
 }
 
 body {
@@ -28,14 +30,21 @@ body {
     background-color: var(--theme-accent);
 }
 
-#optic-calculator {
+.project-link {
     border: 2px solid var(--theme-accent);
     border-radius: 20%;
 }
-
-#optic-calculator:hover {
+.project-link:hover {
     border-color: var(--theme-dark);
     color: var(--theme-dark);
+}
+
+.pl-alt {
+    color: var(--theme-dark);
+}
+
+.pl-alt:hover {
+    color: var(--theme-accent);
 }
 
 p.p-restrictor {
