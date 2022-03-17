@@ -22,9 +22,9 @@
                         <span class="navbar-toggler-icon"></span>
                     </button>
                     <div id="navbarContent" class="collapse navbar-collapse justify-content-end">
-                        <a href="#about-me" class="btn btn-outline-light me-2 my-2">About Me</a>
-                        <a href="#deployed-projects" class="btn btn-outline-light me-2 my-2">Deployed Projects</a>
-                        <a href="#contact-information" class="btn btn-outline-light me-2 my-2">Contact Information</a>
+                        <a href="#about-me-scroll" class="btn btn-outline-light me-2 my-2">About Me</a>
+                        <a href="#deployed-projects-scroll" class="btn btn-outline-light me-2 my-2">Deployed Projects</a>
+                        <a href="#contact-information-scroll" class="btn btn-outline-light me-2 my-2">Contact Information</a>
                         <a href="" aria-disabled="true" class="btn btn-outline-light me-2 my-2 disabled">Resume</a>
                     </div>
                 </div>
@@ -38,46 +38,56 @@
             <section class="row p-5">
                 <div class="col g-5 overflow-y">
                     <h3>It all started with an interest...</h3>
-                    <p class="p-5 p-restrictor">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, ipsam, similique et pariatur quod aut, a modi consequatur obcaecati facere eveniet. Nesciunt eveniet corporis ut architecto repellendus doloremque sequi ex!</p>
+                    <p class="p-5 p-restrictor">
+                        I was a new father, a freshly hired optician, and an avid gamer. It was a weird pallet of interests and responsibilities. 
+                        But because of these, I stumbled upon coding and programming languages; and I was HOOKED. The first time I looked at the power
+                        that programming languages had, the small and big life applications, was like learning how to drive for the first time. 
+                        For me the joy was (and still is) more about the challenge of solving complex problems than what the end result is (although 
+                        succeeding does also feel just as good). My very first (partially) working 
+                        application was a tool that I wanted to utilize in helping me assist customers with finding the perfect eyewear. Eventually 
+                        my passion for coding grew from a simple hobby to a bit of an obsession. And now I am here, able to build complete and complex 
+                        sites full of design and logic.
+                    </p>
                 </div>
-                <div class="col-md-6 g-5 d-flex justify-content-center">
-                    <img src="https://via.placeholder.com/500x500" alt="First coding project" width="150" height="150">
+                <div class="col-md-6 g-5 d-flex justify-content-center align-items-center">
+                    <a id="optic-calculator" class="p-5" href="https://github.com/Vidalatan/Optic-Calculator">
+                        <img src="./assets/images/glasses.png" alt="First coding project" width="300" height="250">
+                        <p class="mb-0 mt-3 text-center">Python Optic Calculator</p>
+                    </a>
+
+                    <!-- <img src="./assets/images/glasses.png" alt="First coding project" width="250" height="250"> -->
                 </div>
             </section>
 
-            <div class="page-spacer"></div>
+            <div id="about-me-scroll" class="page-spacer"></div>
 
             <section class="row">
                 <div class="col-md-6 g-5 mb-5 d-flex justify-content-center">
-                    <img src="https://via.placeholder.com/500x500" alt="Image of me" width="150" height="150">
+                    <img id="image-me" src="./assets/images/me.jpg" alt="Image of me" width="375" height="375">
                 </div>
-                <div class="col overflow-y">
+                <div class="col g-5 overflow-y">
                     <h3>More about myself...</h3>
-                    <p class="p-5 p-restrictor">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate modi officiis veritatis consequatur corporis rem nam alias odit, hic excepturi quia laudantium placeat officia laboriosam et debitis magnam tempore recusandae?</p>
+                    <p class="p-5 p-restrictor">
+                        I'm a versitile web designer due to my extensive history in graphic and web design. My dedication to continuouly learning about 
+                        new web design trends and concepts has made me a valuable member of any team. I served in the United States Airforce as an Airborn 
+                        Cryptologic Linguist where I learned Mandarin Chinese. I am also a dedicated and hard worker with several years of management 
+                        experience. Because of these, I have developed the skill needed to be efficient and effective.
+                    </p>
                 </div>
             </section>
 
-            <div class="page-spacer"></div>
+            <div id="deployed-projects-scroll" class="page-spacer"></div>
 
             <section class="container pt-5">
                 <div class="row pt-5">
-                    <div class="container d-flex justify-content-center">
-                        <img src="https://via.placeholder.com/500x500" alt="Image of me" width="350" height="350">
-                    </div>
+                    <!-- <div class="container d-flex justify-content-center">
+                        <img src="https://via.placeholder.com/500x500" alt="The primary repo" width="350" height="350">
+                    </div> -->
                 </div>
                 <div class="row pt-3">
-                    <div class="col d-flex justify-content-center m-3">
-                        <img src="https://via.placeholder.com/500x500" alt="Image of me" width="250" height="250">
-                    </div>
-                    <div class="col d-flex justify-content-center m-3">
-                        <img src="https://via.placeholder.com/500x500" alt="Image of me" width="250" height="250">
-                    </div>
-                    <div class="col d-flex justify-content-center m-3">
-                        <img src="https://via.placeholder.com/500x500" alt="Image of me" width="250" height="250">
-                    </div>
-                    <div class="col d-flex justify-content-center m-3">
-                        <img src="https://via.placeholder.com/500x500" alt="Image of me" width="250" height="250">
-                    </div>
+                    <!-- <div class="col d-flex justify-content-center m-3">
+                        <img src="https://via.placeholder.com/500x500" alt="Alternate repo" width="250" height="250">
+                    </div> -->
                 </div>
             </section>
 
@@ -85,7 +95,7 @@
 
         <div class="page-spacer"></div>
 
-        <footer class="row bg-dark">
+        <footer id="contact-information-scroll" class="row bg-dark">
             <h5 class="text-center mb-4"> Contact Me </h5>
             <div class="row-cols-3 d-flex mb-3">
                 <a class="col d-flex justify-content-center align-items-center" href="mailto:vidalatan@gmail.com"> Email Me!</a>

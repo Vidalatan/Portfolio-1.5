@@ -1,7 +1,13 @@
+:root {
+    --theme-dark: rgb(33, 37, 41); /* same color used from bootstrap */
+    --theme-light: darkgray;
+    --theme-accent: white;
+}
+
 body {
     padding: 0;
     margin: 0;
-    background-color: darkgray;
+    background-color: var(--theme-light);
 }
 
 .background-thing {
@@ -19,7 +25,30 @@ body {
 .square {
     height: 25px;
     width: 25px;
-    background-color: white;
+    background-color: var(--theme-accent);
+}
+
+#optic-calculator {
+    border: 2px solid var(--theme-accent);
+    border-radius: 20%;
+}
+
+#optic-calculator:hover {
+    border-color: var(--theme-dark);
+    color: var(--theme-dark);
+}
+
+p.p-restrictor {
+    line-height: 2em;
+}
+
+a {
+    text-decoration: none;
+    color: var(--theme-accent);
+}
+
+#image-me {
+    border-radius: 25%;
 }
 
 .header-spacing {
@@ -32,11 +61,17 @@ body {
 }
 
 .p-restrictor {
-    max-width: 650px;
+    max-width: 750px;
 }
 
 h5 {
-    color: white;
+    color: var(--theme-accent);
+}
+
+@media screen and (max-width: 576px) {
+    p.p-restrictor {
+        line-height: normal;
+    }
 }
 
 @media screen and (max-width: 182px) {
