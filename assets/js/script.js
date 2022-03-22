@@ -5,7 +5,8 @@ var repositories = {
     1: ["https://github.com/Vidalatan/scheduler", "https://raw.githubusercontent.com/Vidalatan/scheduler/main/Assets/images/FullPage.png",false],
     2: ["https://github.com/Vidalatan/code_quiz", "https://raw.githubusercontent.com/Vidalatan/code_quiz/main/Assets/Images/demo.gif",false],
     3: ["https://github.com/Vidalatan/password_generator", "https://raw.githubusercontent.com/Vidalatan/password_generator/main/readme_resource/full_site_w_pass.png",true],
-    4: ["https://github.com/Vidalatan/Mini-project", "https://raw.githubusercontent.com/Vidalatan/Mini-project/main/assets/MetaPets-Page.png",false]
+    4: ["https://github.com/Vidalatan/Mini-project", "https://raw.githubusercontent.com/Vidalatan/Mini-project/main/assets/MetaPets-Page.png",false],
+    5: ["https://github.com/Vidalatan/semantic-html", "https://raw.githubusercontent.com/Vidalatan/semantic-html/main/assets/images/horiseonpage.png", false]
 };
 var primary_repo_size = 350;
 var secondary_repo_size = 250;
