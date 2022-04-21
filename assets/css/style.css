@@ -90,6 +90,11 @@ h5 {
     color: var(--theme-accent);
 }
 
+.nameplate {
+    background-color: rgba(109, 109, 109, 0.80);
+    border-radius: 5px;
+}
+
 @media screen and (max-width: 992px) {
     .project-restrictor {
         padding: 0;
